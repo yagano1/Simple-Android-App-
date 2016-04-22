@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -39,10 +40,14 @@ public class FunFactsActivity extends AppCompatActivity {
                 String fact = " ";
                 factLabel.setText(mfacBook.getFacts());
                 mealLayout.setBackgroundColor(Color.parseColor(randomColor.getColor()));
+
+
             }
 
         };
         ShowFact.setOnClickListener(listener);
+        Toast.makeText(this,"Yay! Our Activity was created", Toast.LENGTH_LONG).show();
+
 
     }
 
