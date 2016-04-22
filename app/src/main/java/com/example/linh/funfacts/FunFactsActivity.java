@@ -26,6 +26,7 @@ public class FunFactsActivity extends AppCompatActivity {
     private GoogleApiClient client;
     private facBook mfacBook = new facBook();
     private randcomColor randomColor = new randcomColor();
+    public static  final  String TAG = FunFactsActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class FunFactsActivity extends AppCompatActivity {
         };
         ShowFact.setOnClickListener(listener);
         Toast.makeText(this,"Yay! Our Activity was created", Toast.LENGTH_LONG).show();
-        Log.d("FunFactsActivity", "We are loging from the onCreate() method!");
+        Log.d(TAG, "We are loging from the onCreate() method!");
 
 
     }
