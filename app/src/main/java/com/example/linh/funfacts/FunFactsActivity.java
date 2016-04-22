@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -47,6 +48,7 @@ public class FunFactsActivity extends AppCompatActivity {
         };
         ShowFact.setOnClickListener(listener);
         Toast.makeText(this,"Yay! Our Activity was created", Toast.LENGTH_LONG).show();
+        Log.d("FunFactsActivity", "We are loging from the onCreate() method!");
 
 
     }
