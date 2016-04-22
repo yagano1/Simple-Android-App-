@@ -11,6 +11,8 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.util.Random;
+
 public class FunFactsActivity extends AppCompatActivity {
 
     /**
@@ -24,11 +26,21 @@ public class FunFactsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fun_facts);
         Button ShowFact = (Button) findViewById(R.id.ShowFactsButton);
-        TextView factLabel = (TextView) findViewById(R.id.factLabel);
-        ShowFact.setOnClickListener();
+        final TextView factLabel = (TextView) findViewById(R.id.factLabel);
+        View.OnClickListener listener = new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View View){
+                String fact;
+                Random
+                 factLabel.setText(fact);
+            }
+
+        };
+        ShowFact.setOnClickListener(listener);
 
     }
 
 
     }
-}
+
