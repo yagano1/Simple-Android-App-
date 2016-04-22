@@ -31,11 +31,22 @@ public class FunFactsActivity extends AppCompatActivity {
         {
             @Override
             public void onClick(View View){
-                String fact;
+                String fact = " ";
                 Random randomGenerator = new Random();
                 int randomNumber = randomGenerator.nextInt(3);
-                fact =  randomNumber + "" ;
+               if(randomNumber == 0)
+               {
+                   fact = "Pig can fly";
+               }else if (randomNumber == 1)
+               {
+                   fact = "Ants strect when they wake up in the morning";
+               }else if (randomNumber == 2)
+               {
+                   fact = "Dog can say meo meo";
+               }
                 factLabel.setText(fact);
+
+
 
             }
 
