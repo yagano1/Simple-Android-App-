@@ -20,7 +20,7 @@ public class FunFactsActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
-
+    private facBook mfacBook = new facBook();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +32,8 @@ public class FunFactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View View){
                 String fact = " ";
-                facBook fac = new facBook();
-                factLabel.setText(fac.getFacts());
+
+                factLabel.setText(mfacBook.getFacts());
             }
 
         };
