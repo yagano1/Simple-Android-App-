@@ -32,8 +32,11 @@ public class FunFactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View View){
                 String fact;
-                Random
-                 factLabel.setText(fact);
+                Random randomGenerator = new Random();
+                int randomNumber = randomGenerator.nextInt(3);
+                fact =  randomNumber + "" ;
+                factLabel.setText(fact);
+
             }
 
         };
